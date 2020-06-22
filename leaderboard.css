@@ -1,0 +1,20 @@
+.card{
+   background-image: linear-gradient(to right, #06beb6, #48b1bf);
+    color: white;
+}
+
+.top{
+    background-image: linear-gradient(to right, #06beb6, #48b1bf);
+    color: white;
+}
+
+h1{
+ text-align: center;   
+}
+.bio{
+    padding: 2%;
+}
+
+.card-deck{
+    margin: 9%;
+}
