@@ -1,4 +1,4 @@
-from hype_engine.src import create_app
+from hypengine.src import create_app
 
 app = create_app()
 

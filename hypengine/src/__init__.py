@@ -1,10 +1,6 @@
 from flask import Flask
-from hype_engine.src.config import Config
+from hypengine.src.config import Config
 from flask_sqlalchemy import SQLAlchemy
-from flask_migrate import Migrate, MigrateCommand
-from flask_script import Manager
-
-# db = SQLAlchemy()
 
 def create_app():
     app = Flask(__name__,  template_folder='templates')
