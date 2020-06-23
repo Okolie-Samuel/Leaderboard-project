@@ -7,6 +7,8 @@
 - Clone the forked repo on your repository
 - Go to your work directory and git clone above_link.git
 - cd into project folder
+- activate virtual environment: source env/bin/activate (LINUX)
+- pip install -r requirements.txt
 - git remote add upstream main_repo_clone.git
 - git pull upstream master
 - git checkout -b branchName
