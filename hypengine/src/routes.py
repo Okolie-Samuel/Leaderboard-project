@@ -6,11 +6,10 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 from sqlalchemy.dialects import mysql
 from flask_sqlalchemy import SQLAlchemy
-from datetime import datetime as dt
 from flask import Flask, jsonify, request, make_response, render_template
 from functools import wraps
 # from src.models import db, LeaderBoardTable
-import ezsheets as ezs
+# import ezsheets as ezs
 from flask import current_app as app
 # from views import home_template
 
