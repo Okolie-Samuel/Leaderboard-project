@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@font-face{
+    font-family: trial;
+    src: url('CENTRALESANSCND-BOLD.otf');
+    font-weight: bold;}
+
+.data-form {
+    color: rgb(7, 7, 7);
+    font-family: 'trial', monospace;
+}
+
+.top-three {
+    padding: 2px 4px 2px 4px;
+    text-align: center;
+}
+
+.top-three-section {
+    margin: 2px auto 2px auto;
+}

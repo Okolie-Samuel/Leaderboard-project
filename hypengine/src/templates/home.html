@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <div class="alert alert-warning" role="alert">
+      {{ no_email_count }} missing emails
+    </div>
+
+    <div class="top-three-section">
+      <div class="top-three">
+        {{ highest_three }}
+      </div> 
+    </div>
+  
+    <table class="table table-hover table-sm" id="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Full Name</th>
+                <th scope="col">Username</th>
+                <th scope="col">Email</th>
+                <th scope="col">Total Points</th>
+                <th scope="col">Share</th>
+            </tr>
+        </thead>
+        {% for no, name, username, email_addr, points in board_data %}
+        <tbody>
+              <tr>
+                <th scope="row">{{ no }}</th>
+                <td class='data-form'>{{ name }}</td>
+                <td class='data-form'>{{ username }}</td>
+                <td class='data-form'>{{ email_addr }}</td>
+                <td class='data-form'>{{ points }}</td>
+                <td class='data-form'><a class="btn btn-primary" style="font-size: 10px;" target="_blank" href="https://twitter.com/share?text=I scored {{ points }} in my HNG Task. My username is *{{ username }}!" role="button">share</a></td>
+              </tr>
+        {% endfor %}
+
+            </tbody>
+          </table>
+{% endblock %}
